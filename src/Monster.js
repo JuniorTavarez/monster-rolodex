@@ -1,4 +1,5 @@
 import { Component } from "react";
+import CardList from "./component/card-list/card-list.component";
 
 
 
@@ -44,14 +45,15 @@ render(){
                 })
             }}
         />
-        {
+        <CardList/>
+        {/*
             filteredMonsters.map((monster, index) => {
                 return (
                     <div key={index}>
                     <h1 >{monster.name}</h1>
                     </div>
                     )})
-        }
+                */  }
         </div>
     )
 }
