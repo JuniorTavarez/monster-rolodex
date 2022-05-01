@@ -1,5 +1,4 @@
 import { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import CardList from "./component/card-list/card-list.component";
 import SearchBox from "./component/search-box/search-box.component";
@@ -43,7 +42,7 @@ const filteredMonsters = monsters.filter((monster) => {
 return(
     <div className="App">
     <h1>Monsters Rolodex</h1>
-    <SearchBox onChangeHandler={onSearchChange} placeholder='search monsters' className='search-box'/>
+    <SearchBox onChangeHandler={onSearchChange} placeholder='search monsters' className='monster-search-box'/>
     <CardList monsters={filteredMonsters}/>
     </div>
 )
